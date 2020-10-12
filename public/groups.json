@@ -181,6 +181,8 @@
       }, {
         "path": "json/vi_style_arrows.json"
       }, {
+        "path": "json/vim_and_shell.json"
+      }, {
         "path": "json/vim_mode_plus.json",
         "extra_description_path": "extra_descriptions/vim_mode_plus.json.html"
       }, {

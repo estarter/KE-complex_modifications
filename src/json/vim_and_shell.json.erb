@@ -1,0 +1,69 @@
+{
+    "title": "Vi and Shell",
+    "rules": [
+
+        {
+            "description": "Change Fn + h/j/k/l to Arrows",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("h", ['fn'], ['shift', 'option', 'caps_lock', 'command']) %>,
+                    "to": <%= to([["left_arrow"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("j", ['fn'], ['shift', 'option', 'caps_lock', 'command']) %>,
+                    "to": <%= to([["down_arrow"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("k", ['fn'], ['shift', 'option', 'caps_lock', 'command']) %>,
+                    "to": <%= to([["up_arrow"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("l", ['fn'], ['shift', 'option', 'caps_lock', 'command']) %>,
+                    "to": <%= to([["right_arrow"]]) %>
+                }
+            ]
+        },
+
+        {
+            "description": "Moving in bash style (https://clementc.github.io/blog/2018/01/25/moving_cli/)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("b", ['option'], ['caps_lock']) %>,
+                    "to": <%= to([["left_arrow", "option"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("f", ['option'], ['caps_lock']) %>,
+                    "to": <%= to([["right_arrow", "option"]]) %>
+                }
+            ]
+        },
+        {
+            "description": "Erase in bash style (https://clementc.github.io/blog/2018/01/25/moving_cli/)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("w", ['control'], ['caps_lock']) %>,
+                    "to": <%= to([["delete_or_backspace", "option"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("d", ['option'], ['caps_lock']) %>,
+                    "to": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": [
+                            "option",
+                            "fn"
+                        ]
+                    }
+                }
+            ]
+        }
+
+    ]
+}
