@@ -16,7 +16,8 @@
                 "shift",
                 "option",
                 "caps_lock",
-                "command"
+                "command",
+                "control"
               ]
             }
           },
@@ -38,7 +39,8 @@
                 "shift",
                 "option",
                 "caps_lock",
-                "command"
+                "command",
+                "control"
               ]
             }
           },
@@ -60,7 +62,8 @@
                 "shift",
                 "option",
                 "caps_lock",
-                "command"
+                "command",
+                "control"
               ]
             }
           },
@@ -82,7 +85,8 @@
                 "shift",
                 "option",
                 "caps_lock",
-                "command"
+                "command",
+                "control"
               ]
             }
           },
