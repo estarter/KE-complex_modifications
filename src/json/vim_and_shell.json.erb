@@ -2,32 +2,6 @@
     "title": "Vi and Shell",
     "rules": [
         {
-            "description": "Change Cmd + h/j/k/l to Arrows",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": <%= from("h", ['command'], ['shift', 'option', 'caps_lock', 'control']) %>,
-                    "to": <%= to([["left_arrow"]]) %>
-                },
-                {
-                    "type": "basic",
-                    "from": <%= from("j", ['command'], ['shift', 'option', 'caps_lock', 'control']) %>,
-                    "to": <%= to([["down_arrow"]]) %>
-                },
-                {
-                    "type": "basic",
-                    "from": <%= from("k", ['command'], ['shift', 'option', 'caps_lock', 'control']) %>,
-                    "to": <%= to([["up_arrow"]]) %>
-                },
-                {
-                    "type": "basic",
-                    "from": <%= from("l", ['command'], ['shift', 'option', 'caps_lock', 'control']) %>,
-                    "to": <%= to([["right_arrow"]]) %>
-                }
-            ]
-        },
-
-        {
             "description": "Change Fn + h/j/k/l to Arrows",
             "manipulators": [
                 {
