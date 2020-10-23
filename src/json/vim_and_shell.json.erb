@@ -2,6 +2,17 @@
     "title": "Vi and Shell",
     "rules": [
         {
+            "description": "Remap Caps to Fn",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from('caps_lock', [], ['any']) %>,
+                    "to": <%= to([["fn"]]) %>
+                }
+            ]
+        },
+
+        {
             "description": "Change Fn + h/j/k/l to Arrows",
             "manipulators": [
                 {
