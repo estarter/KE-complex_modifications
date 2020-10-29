@@ -211,7 +211,7 @@
       ]
     },
     {
-      "description": "Remap Caps+Esc",
+      "description": "Remap Esc+Caps/Cmd",
       "manipulators": [
         {
           "type": "basic",
@@ -231,6 +231,26 @@
               "key_code": "grave_accent_and_tilde"
             }
           ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ],
+              "optional": [
+                "shift"
+              ]
+            }
+          },
+          "to": {
+            "key_code": "grave_accent_and_tilde",
+            "modifiers": [
+              "command"
+            ]
+          }
         }
       ]
     }
