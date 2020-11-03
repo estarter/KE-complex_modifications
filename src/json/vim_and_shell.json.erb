@@ -8,6 +8,66 @@
                     "type": "basic",
                     "from": <%= from('caps_lock', [], ['any']) %>,
                     "to": <%= to([["fn"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from('1', ['fn'], ['any']) %>,
+                    "to": <%= to([["f1"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from('2', ['fn'], ['any']) %>,
+                    "to": <%= to([["f2"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from('3', ['fn'], ['any']) %>,
+                    "to": <%= to([["f3"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from('4', ['fn'], ['any']) %>,
+                    "to": <%= to([["f4"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from('5', ['fn'], ['any']) %>,
+                    "to": <%= to([["f5"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from('6', ['fn'], ['any']) %>,
+                    "to": <%= to([["f6"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from('7', ['fn'], ['any']) %>,
+                    "to": <%= to([["f7"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from('8', ['fn'], ['any']) %>,
+                    "to": <%= to([["f8"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from('9', ['fn'], ['any']) %>,
+                    "to": <%= to([["f9"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from('0', ['fn'], ['any']) %>,
+                    "to": <%= to([["f10"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from('hyphen', ['fn'], ['any']) %>,
+                    "to": <%= to([["f11"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from('equal_sign', ['fn'], ['any']) %>,
+                    "to": <%= to([["f12"]]) %>
                 }
             ]
         },
@@ -76,7 +136,7 @@
         },
 
         {
-            "description": "Remap Esc+Caps/Cmd",
+            "description": "Remap Esc+Cmd and Esc+Fn",
             "manipulators": [
                 {
                     "type": "basic",
